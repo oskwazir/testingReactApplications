@@ -1,2 +1,1 @@
-# testingReactApplications
-Slides on my presentation for the Tucson ReactJS Meetup May 7 2015
+#Testing React Applications
