@@ -55,7 +55,7 @@ body {
 	word-wrap: break-word;
 }
 
-.reveal h1 {font-size: $heading1Size; }
+.reveal h1 {font-size: $heading1Size; letter-spacing: 0.05em; }
 .reveal h2 {font-size: $heading2Size; }
 .reveal h3 {font-size: $heading3Size; }
 .reveal h4 {font-size: $heading4Size; }
@@ -343,8 +343,10 @@ body {
 Custom styles
 */
 
-.reveal a.pop{
-	color:#3B86B2;
+.reveal {
+	 .pop{
+		color:$linkColor;
+	}
 }
 
 .uppercase{
@@ -355,9 +357,15 @@ Custom styles
 	text-transform: lowercase;
 }
 
-.reveal h1.offsetShade {
+.reveal h1 {
   text-shadow:
     -.010em .010em $offset,
     -.040em .040em $shade;
+}
+
+.reveal h1.alternate-shade {
+  text-shadow:
+    -.010em .010em $offset,
+    -.040em .040em darken(#004358,8%);
 }
 
